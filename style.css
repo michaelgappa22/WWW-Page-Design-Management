@@ -6,3 +6,20 @@
     object-position: top;
     border: rgba(19, 6, 81, 0.6) solid 16px;
 }
+.educationBadges {
+    width: 300px; /* You can set the dimensions to whatever you want */
+    height: 300px;
+    object-fit: cover;
+}
+
+.educationTitle {
+    margin-top: 30px;
+}
+#resumeTop {
+    background-image: url('backgroundImageCard.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 100px;
+}
+
