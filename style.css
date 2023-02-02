@@ -1,0 +1,8 @@
+#hero-image.rounded-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    border: rgba(19, 6, 81, 0.6) solid 16px;
+}
