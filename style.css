@@ -1,3 +1,8 @@
+div.navbar {
+    background-color: rgba(19, 6, 81, 0.6); 
+    color: white;
+}
+
 #hero-image.rounded-circle {
     width: 200px;
     height: 200px;
@@ -12,14 +17,20 @@
     object-fit: cover;
 }
 
-.educationTitle {
-    margin-top: 30px;
+.skillIcons {
+    width: 100px; /* You can set the dimensions to whatever you want */
+    height: 100px;
+    object-fit: cover;
+}
+.backgroundContainerColor{
+    background-color: rgba(221, 221, 221, 0.904);
 }
 #resumeTop {
-    background-image: url('backgroundImageCard.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)), url('images/backgroundImageCard.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin-bottom: 100px;
+    background-size: 100%;
+    margin-bottom: 50px;
+    color: white;
 }
 
