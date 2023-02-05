@@ -2,11 +2,11 @@
     <html>
     <head>
         <title>
-            Michael Gappa's Resume
+            Michael Gappa - Dynamics 365 CRM and Web Developer
         </title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(19, 6, 81, 0.6);">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(48, 30, 103);">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,7 +15,8 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="page2a.html">About Me</a>
+                    <a class="nav-link" data-bs-toggle="modal" href="#myResume">Resume</a>
+                    <a class="nav-link" href="AboutMe.html">About Me</a>
                 </div>
                 </div>
             </div>
@@ -75,8 +76,8 @@
                             of a challenge.
                         </p>
                     </div>
-                    <div class="col-lg-6">
-                        <img src="images/goal.jpg" style="max-width: 100%;">
+                    <div class="col-lg-6 text-center">
+                        <img class="w-50" src="images/goal.png" style="max-width: 100%;">
                     </div>
                 </div>
             </div>
@@ -168,7 +169,7 @@
                         <h3 class="text-center m-5">
                             Languages I Know
                         </h3>
-                            <table class="table">
+                            <table class="table table-dark table-striped table-bordered">
                                 <thead>
                                     <th scope="col">
                                         <center>Language</center>
@@ -245,12 +246,38 @@
                 </div>
             </div>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myResume" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content" >
+                <div class="modal-header">
+                <h5 class="Resume" id="exampleModalLabel">Resume</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Interested in my resume? Please click below and email me at michaelgappa@usf.edu for more information.
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="download()"><a id="resumeDownload" href="Michael J Gappa Resume.docx" download> Download Copy of Resume</a></button>
+                </div>
+            </div>
+            </div>
+        </div>
         <footer>
-            <div class="text-center p-4" style="background-color: rgba(19, 6, 81, 0.6); color: white;">
+            <div class="text-center p-4" style="background-color: rgb(48, 30, 103); color: white;">
                 © 2023 Copyright: <b>Michael Gappa</b>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <script>
+            const container = document.getElementById("myResume");
+            const modal = new bootstrap.Modal(container);
+            document.getElementById("resumeDownload").addEventListener("click", function () {
+                modal.hide();
+            });
+        </script>
     </body>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
