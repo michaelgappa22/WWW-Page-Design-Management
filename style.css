@@ -1,0 +1,56 @@
+div.navbar {
+    background-color: rgba(19, 6, 81, 0.6); 
+    color: white;
+}
+
+#hero-image.rounded-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    border: rgba(3, 0, 28,0.6) solid 16px;
+}
+.educationBadges {
+    width: 300px; /* You can set the dimensions to whatever you want */
+    height: 300px;
+    object-fit: cover;
+}
+
+.skillIcons {
+    width: 100px; /* You can set the dimensions to whatever you want */
+    height: 100px;
+    object-fit: cover;
+}
+.backgroundContainerColor{
+    background-color: rgba(91, 143, 185, 0.20);
+}
+#resumeTop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)), url('images/backgroundImageCard.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 50px;
+    color: white;
+}
+
+#resumeDownload {
+    text-decoration: none;
+    color: white;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+    background-color:rgb(48, 30, 103);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background-color:white;
+    
+}
