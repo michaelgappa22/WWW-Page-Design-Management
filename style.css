@@ -1,8 +1,3 @@
-div.navbar {
-    background-color: rgba(19, 6, 81, 0.6); 
-    color: white;
-}
-
 #hero-image.rounded-circle {
     width: 200px;
     height: 200px;
@@ -26,16 +21,11 @@ div.navbar {
     background-color: rgba(91, 143, 185, 0.20);
 }
 #resumeTop {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)), url('images/backgroundImageCard.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)), url('backgroundImageCard.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
     margin-bottom: 50px;
-    color: white;
-}
-
-#resumeDownload {
-    text-decoration: none;
     color: white;
 }
 ::-webkit-scrollbar {
@@ -53,4 +43,34 @@ div.navbar {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
     background-color:white;
     
+}
+.carousel-item img {
+    height: 50vh;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .carousel-item:after {
+    content: "";
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.3);
+  }
+
+  .carousel-caption {
+    z-index: 1;
+  }
+
+  .contact-logo {
+    width: 100px;
+  }
+
+#aboutMeBorder {
+    background: rgb(48, 30, 103);
+    padding: 12px;
+    border: 5px solid rgb(48, 30, 103);
 }
