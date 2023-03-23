@@ -1,3 +1,19 @@
+.bodyContainer {
+    margin-top: 18%;
+}
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)), url('backgroundImageCard.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 50px;
+    color: white;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+}
+
 #hero-image.rounded-circle {
     width: 200px;
     height: 200px;
@@ -5,6 +21,7 @@
     object-fit: cover;
     object-position: top;
     border: rgba(3, 0, 28,0.6) solid 16px;
+    float: left;
 }
 .educationBadges {
     width: 300px; /* You can set the dimensions to whatever you want */
@@ -20,14 +37,7 @@
 .backgroundContainerColor{
     background-color: rgba(91, 143, 185, 0.20);
 }
-#resumeTop {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)), url('backgroundImageCard.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-bottom: 50px;
-    color: white;
-}
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -69,7 +79,17 @@
     width: 100px;
   }
 
-#aboutMeBorder {
+.aboutMeBorder {
+    background: rgb(48, 30, 103);
+    padding: 12px;
+    border: 5px solid rgb(48, 30, 103);
+    color: white;
+}
+
+.FixedBox {
+    position: fixed;
+    top: 500px;
+    color: white;
     background: rgb(48, 30, 103);
     padding: 12px;
     border: 5px solid rgb(48, 30, 103);

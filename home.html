@@ -13,15 +13,29 @@
     <body>
         <section>
             <div>
-                <div id="resumeTop" class="p-4">
+                <div class="header">
                     <div class="container text-center">
                         <div class="row">
                             <div class="col">
                                 <img id="hero-image" src="mike_hero.jpg" alt="Mike's Picture" class="rounded-circle justify-content-center">
                             </div>
+                            <div class="col pt-4">
+                                <h1>
+                                    Michael Gappa
+                                </h1>
+                                <h2>
+                                    Web Developer
+                                </h2>
+                                <h3>
+                                    Student USF
+                                </h3>
+                            </div>
                         </div>
                     </div>
                 </div>
+        </section>
+        <div class="bodyContainer">
+            <div>
                 <div class="text-center">
                     <h1>
                         Welcome to my page! 
@@ -31,55 +45,56 @@
                     </p>
                 </div>
             </div>
-        </section>
-        <section id="inspiration-section">
-            <div id="inspiration-target"></div>
-        <div class="container">
-        <div class="row">
-            <h3 class="pb-5 col" style="text-align: center;">My Inspiration</h3>
+            <section id="inspiration-section">
+                <div id="inspiration-target">
+                    <div class="container">
+                        <div class="row">
+                            <h3 class="pb-5 col" style="text-align: center;">My Inspiration</h3>
+                        </div>
+                        <div class="row">
+                            <div id="carouselExampleCaptions" class="carousel slide" data-bs-interval='false'>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="journey.jpg" class="d-block w-100" alt="jing">
+                                <div class="carousel-caption  d-md-block">
+                                <h5>"A journey of a thousand miles begins with a single step"</h5>
+                                <p>Dao De Jing</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="helen_keller.jpg" class="d-block w-100" alt="keller">
+                                <div class="carousel-caption d-md-block">
+                                <h5>"Alone we can do so little; together we can do so much."</h5>
+                                <p>Helen Keller</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="winston_churchill.jpg" class="d-block w-100" id="churchill"alt="winston">
+                                <div class="carousel-caption d-md-block">
+                                <h5>"Success is not final, failure is not fatal: It is the courage to continue that counts."</h5>
+                                <p>Winston Churchill</p>
+                                </div>
+                            </div>
+                            </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
         </div>
-            <div class="row">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-interval='false'>
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="journey.jpg" class="d-block w-100" alt="jing">
-                <div class="carousel-caption  d-md-block">
-                <h5>"A journey of a thousand miles begins with a single step"</h5>
-                <p>Dao De Jing</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="helen_keller.jpg" class="d-block w-100" alt="keller">
-                <div class="carousel-caption d-md-block">
-                <h5>"Alone we can do so little; together we can do so much."</h5>
-                <p>Helen Keller</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="winston_churchill.jpg" class="d-block w-100" id="churchill"alt="winston">
-                <div class="carousel-caption d-md-block">
-                <h5>"Success is not final, failure is not fatal: It is the courage to continue that counts."</h5>
-                <p>Winston Churchill</p>
-                </div>
-            </div>
-            </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                </div>
-            </div>
-        </div>
-        </section>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>
