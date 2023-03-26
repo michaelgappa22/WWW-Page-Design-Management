@@ -32,3 +32,16 @@
     color: white;
     min-height: 100%;
 }
+
+.FixedBox {
+    bottom: 10px;
+    right: 10px;
+    position: fixed;
+    color: white;
+    background: rgb(109, 145, 37);
+    padding: 12px;
+    border: 5px solid rgb(48, 30, 103);
+    border-style: outset;
+    margin-right: 170px;
+    margin-bottom: 20px;
+}
