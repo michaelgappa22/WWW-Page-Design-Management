@@ -87,44 +87,15 @@
 }
 
 .FixedBox {
+    bottom: 10px;
+    right: 10px;
     position: fixed;
-    top: 500px;
     color: white;
-    background: rgb(48, 30, 103);
+    background: rgb(109, 145, 37);
     padding: 12px;
     border: 5px solid rgb(48, 30, 103);
+    border-style: outset;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
-.gameImages {
-    width: 500px;
-}
-
-.leftPanel {
-    z-index: 0;
-    position: absolute;
-    left: 0px;
-    top: 210px;
-    width: 150px;
-    padding: 10px;
-    background-color: yellowgreen;
-    color: white;
-    min-height: 100%;
-}
-
-.middlePanel {
-    color:rgb(48, 30, 103);
-    padding: 10px;
-    min-height: 100%;
-}
-
-.rightPanel {
-    z-index: 0;
-    position: absolute;
-    right: 0px;
-    top: 210px;
-    width: 150px;
-    padding: 10px;
-    background-color: yellowgreen;
-    color: white;
-    min-height: 100%;
-}
