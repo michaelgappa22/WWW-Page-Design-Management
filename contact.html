@@ -34,14 +34,92 @@
                 <div class="col">
                     <img id="aboutMeBorder" class="w-75" src="me.jpg">
                 </div>
-                <div class="col-6">
-                    <h1>
+                <div class="col-lg-6 col-md-8 col-sm-12 mt-5">
+                    <h1 class="mt-5 pt-5">
                         Want to learn more?
-                        <hr>
-                        <a class="btn btn-primary" href="mailto:1234@usf.edu" role="button">Contact Me</a>
                     </h1>
+                    <form name="thisform">
+                        <div>
+                            <label for="fullname" class="form-label">Fullname</label>
+                            <input type="text" class="form-control" id="fullName" aria-describedby="emailHelp">
+                        </div>
+                        <div>
+                          <label for="InputEmail1" class="form-label">E-mail address</label>
+                          <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        </div>
+                        <div>
+                            <label for="Subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" aria-describedby="emailHelp">
+                        </div>
+                        <label for="Priority" class="form-label">Priority</label>
+                        <select class="form-select" aria-label="Default select example" id="priority">
+                            <option selected value="none">Choose a Priority</option>
+                            <option value="Pretty Important!">URGENT!</option>
+                            <option value="Important!">High</option>
+                            <option value="Not too important!">Medium</option>
+                            <option value="Not important">Low</option>
+                            <option value="It can wait a while">Read after reading Spam!</option>
+                          </select>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <a class="btn btn-primary" id="clearForm" role="button" onclick="clearForm()">Clear Form</a>
+                            <a class="btn btn-primary" id="sendMessage" role="button" onclick="sendMessage()">Send Message</a>
+                        </div>
+                    </form>
+                    <h4>
+                        If your message passes inspection, it will be displayed below:
+                    </h4>    
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="messageArea" rows="6"></textarea>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </body>
-    </html>
+    <script>
+        function clearForm()
+        {
+            var elem = document.getElementById("fullName").value = "";
+            var elem = document.getElementById("email").value = "";
+            var elem = document.getElementById("subject").value = "";
+            var elem = document.getElementById("priority").value = "none";
+            var elem = document.getElementById("message").value = "";
+        }
+
+        function sendMessage()
+        {
+            var e = "Full Name: " + document.thisform.fullName.value + "\n" + "Email: "  + document.thisform.email.value;
+            e = e + "\n\n" + "Subject: " + document.thisform.subject.value + "\n";
+            var p = "";
+            switch(document.thisform.priority.value)
+            {
+                case "none":
+                    p = "No priority selected...";
+                    break;
+                case "Pretty Important!":
+                    p = "It's pretty important!";
+                    break;
+                case "Important":
+                    p = "It's important!";
+                    break;
+                case "Not too important!":
+                    p = "It's not too important!";
+                    break;
+                case "Not important":
+                    p = "It's not important!";
+                    break;
+                case "It can wait a while":
+                    p = "It can wait.";
+                    break;
+            }
+            e = e + "Priority: " + p + "\n\n" +  "Message: " + "\n" + document.thisform.message.value;
+            document.getElementById("messageArea").value = e;
+        }
+    </script>
+</html>
